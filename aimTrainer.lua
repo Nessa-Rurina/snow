@@ -255,7 +255,7 @@ RightGroupBox:AddSlider('FOVTrans', {
 Library:SetWatermarkVisibility(true)
 
 -- Sets the watermark text
-Library:SetWatermark('Angel.lua')
+Library:SetWatermark('snow.lua')
 
 Library.KeybindFrame.Visible = true; -- todo: add a function for this
 
@@ -304,22 +304,6 @@ ThemeManager:ApplyToTab(Tabs['UI Settings'])
 
 -- You can use the SaveManager:LoadAutoloadConfig() to load a config 
 -- which has been marked to be one that auto loads!
-
---[[
-                          
-                                                                   
-▀███▀▀▀██████▀   ▀███▀███▄   ▀███▀███▀   ▀██▀▀███▀▀▀██▄▀███▀   ▀██▀
-  ██    ▀███       █   ███▄    █   ███▄  ▄█    ██   ▀██▄ ███   ▄█  
-  ██   █  ██       █   █ ███   █    ▀██▄█▀     ██   ▄██   ███ ▄█   
-  ██▀▀██  ██       █   █  ▀██▄ █      ███      ███████     ████    
-  ██   █  ██       █   █   ▀██▄█    ▄█▀▀██▄    ██           ██     
-  ██      ██▄     ▄█   █     ███   ▄█   ▀██▄   ██           ██     
-▄████▄     ▀██████▀▀ ▄███▄    ██ ▄██▄▄  ▄▄███▄████▄       ▄████▄   
-                                                                   
-                                                                   
-     
-
-]]
 -- Toggle
     getgenv().ChatMode = false
         getgenv().PartMode = true
@@ -390,7 +374,7 @@ ThemeManager:ApplyToTab(Tabs['UI Settings'])
         --
         if getgenv().valiansh == true then
                             game.StarterGui:SetCore("SendNotification", {
-                       Title = "angel.lua",
+                       Title = "snow.lua",
                        Text = "Already Loaded!",
                        Duration = 5
             
@@ -415,7 +399,7 @@ ThemeManager:ApplyToTab(Tabs['UI Settings'])
                 end	
                    if getgenv().NotifMode then
                     game.StarterGui:SetCore("SendNotification", {
-            Title = "angel.lua";
+            Title = "snow.lua";
             Text = "Target: "..tostring(Plr.Character.Humanoid.DisplayName);
         
         })
@@ -426,13 +410,13 @@ ThemeManager:ApplyToTab(Tabs['UI Settings'])
                 end	
             if getgenv().NotifMode then
                             game.StarterGui:SetCore("SendNotification", {
-                       Title = "angel.lua",
+                       Title = "snow.lua",
                        Text = "Unlocked",
                        Duration = 5
                    })
                elseif getgenv().Target == false then
                             game.StarterGui:SetCore("SendNotification", {
-                       Title = "angel.lua",
+                       Title = "snow.lua",
                        Text = "Target left or died.",
                        Duration = 5
          
