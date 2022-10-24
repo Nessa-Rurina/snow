@@ -11,9 +11,7 @@
 /_/  \___/\_,_/ \_,_/  \__/ /_/   
                                   
 -- all scripts are loadstrings which are obfuscated. Dont even try lol
--- made by uwucatgirl#9197 and MUBdb#0001
 ]]
-
 local CoreGuiServices = Instance.new("ScreenGui")
 local SnowLoader = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -86,7 +84,7 @@ Title.BorderSizePixel = 0
 Title.Position = UDim2.new(0.466666669, 0, 0.655172408, 0)
 Title.Size = UDim2.new(0, 200, 0, 50)
 Title.Font = Enum.Font.GothamBlack
-Title.Text = "snow.lua | Loader"
+Title.Text = "snow.lua"
 Title.TextColor3 = Color3.fromRGB(170, 170, 170)
 Title.TextSize = 29.000
 
@@ -114,7 +112,9 @@ Pattern.ScaleType = Enum.ScaleType.Tile
 Pattern.SliceCenter = Rect.new(0, 256, 0, 256)
 Pattern.TileSize = UDim2.new(0, 250, 0, 250)
 
-local function XWISZ_fake_script()
+-- Scripts:
+
+local function XNAPP_fake_script()
 	local script = Instance.new('LocalScript', SnowLoader)
 
 	local load = script.Parent.Load
@@ -151,6 +151,15 @@ local function XWISZ_fake_script()
 	load.MouseButton1Click:Connect(function()
 		if t1 ~= false and t2 == false then
 			if game.PlaceId == 648362523 then
+				game.StarterGui:SetCore(
+					"SendNotification",
+					{
+						Title = "snow.lua";
+						Text = "Breaking Point loaded in "..math.random(132341,773473).."ms";
+						Duration = 5
+					}
+				)
+				wait(.1)
 				loadstring(game:HttpGet(("https://raw.githubusercontent.com/Nessa-Rurina/snow/main/Breaking%20Point.lua"), true))()
 			else
 				s:SetCore("SendNotification", {
@@ -161,6 +170,15 @@ local function XWISZ_fake_script()
 			end
 		elseif t1 == false and t2 ~= false then
 			if game.PlaceId == 5602055394 then
+				game.StarterGui:SetCore(
+					"SendNotification",
+					{
+						Title = "snow.lua";
+						Text = "Hood Modded loaded in "..math.random(132341,773473).."ms";
+						Duration = 5
+					}
+				)
+				wait(.1)
 				loadstring(game:HttpGet(("https://raw.githubusercontent.com/Nessa-Rurina/snow/main/Hood%20Modded.lua"), true))()
 			else
 				s:SetCore("SendNotification", {
@@ -184,20 +202,16 @@ local function XWISZ_fake_script()
 		end
 	end)
 end
-
-coroutine.wrap(XWISZ_fake_script)()
-
-local function FCNODS_fake_script()
+coroutine.wrap(XNAPP_fake_script)()
+local function HBDVYHS_fake_script()
 	local script = Instance.new('LocalScript', Exit)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-
-coroutine.wrap(FCNODS_fake_script)()
-
-local function BNIFO_fake_script()
+coroutine.wrap(HBDVYHS_fake_script)()
+local function SQEJSD_fake_script()
 	local script = Instance.new('LocalScript', SnowLoader)
 
 	local UIS = game:GetService("UserInputService")
@@ -238,4 +252,4 @@ local function BNIFO_fake_script()
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(BNIFO_fake_script)()
+coroutine.wrap(SQEJSD_fake_script)()
